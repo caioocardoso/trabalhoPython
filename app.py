@@ -4,12 +4,12 @@ import pandas as pd
 import plotly.express as px
 
 st.set_page_config(
-    page_title='My First Application',
+    page_title='Dashboard Salaries',
     page_icon='📊',
     layout='wide'
 )
 
-df = pd.read_csv("https://raw.githubusercontent.com/guilhermeonrails/data-jobs/refs/heads/main/salaries.csv")
+df = pd.read_csv("dados_salariais.csv")
 
 # Filters
 st.sidebar.title("Filters")
@@ -38,8 +38,8 @@ df_filtered = df[
     ]
 
 # Principal Content
-st.title("🎲 Salaries Data Analysis")
-st.markdown("This is a simple dashboard to analyze salaries based on various factors.")
+st.title("Dashboard Salaries")
+st.markdown("Created by Caio Cardoso and Guilherme Estrela.")
 
 st.subheader("Key Metrics")
 
